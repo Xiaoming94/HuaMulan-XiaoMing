@@ -1,0 +1,20 @@
+\documentclass[oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage[margin=1.5in]{geometry}
+\title{\Huge Hua Mulan}
+\author{Henry Yang}
+\date{}
+\makeatletter
+\def\newsect{%
+	\vskip3em plus1.5em minus0.5em%
+	\hbox to\linewidth{\hfil*\quad\quad*\quad\quad*\hfil}%
+	\penalty10000\vskip2em plus0.5em minus0.5em%
+	\@afterindentfalse\@afterheading%
+}
+\makeatother%
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\input{chapters/chapter1}
+\end{document}
